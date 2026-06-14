@@ -1,1 +1,17 @@
-.venv
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Private datasets and generated artifacts stay outside the public repo.
+data/
+notebooks/data/
+notebooks/.ipynb_checkpoints/
+*.csv
+*.pth
+*.pt
+*.ckpt
+
+# Only synthetic public fixtures may be committed.
+!examples/
+!examples/synthetic/
+!examples/synthetic/*.csv
